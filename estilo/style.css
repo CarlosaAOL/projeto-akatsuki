@@ -1,0 +1,101 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@font-face {
+    font-family: naruto;
+    src: url(../fontes/njnaruto.ttf);
+}e
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+:root{
+    --font-padrao: Arial, Helvetica, sans-serif;
+    --font-naruto: naruto, arial, verdana, sans-serif;
+    --font-family: "Bebas Neue", sans-serif;
+}
+
+html, body{
+    background-color: lightgray;
+    min-height: 100vh;
+    font-family: var(--font-padrao);
+    margin: 0px;
+}
+
+header{
+        background-image: linear-gradient(to top, black, rgb(95, 95, 95));
+        color: white;
+        text-align: center;
+        padding: 50px 0px;
+}
+
+header > h1{
+    color: rgb(170, 0, 0);
+    font-family: var(--font-naruto);
+    font-size: 8vw;
+    font-style: normal;
+    font-weight: none;
+    font-variant: small-caps;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.534);
+}
+
+section{
+    padding: 10vh 0vh 10vh 5vh;
+    line-height: 2em;
+    font-size: 3vw;
+   
+
+}
+
+section.normal{
+    background-color: white;
+    color: black;
+    
+}
+
+section.img{
+    background-color: rgb(51, 51, 51);
+    color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.678); 
+}
+
+section.img  > pre {
+    background-color: rgba(12, 12, 12, 0.712);
+    display: inline-block;
+    padding: 10px;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.616);
+    
+}
+
+section#img01{
+    background-image: url('../imagens/juzo.jpg');
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    
+}
+
+section#img02{
+    background-image: url('../imagens/sasori.jpg');
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+section#img03{
+    background-image: url('../imagens/orochimaru.jpg');
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+pre{
+    white-space: pre-line;
+    font-family: var(--font-family);
+    
+}
